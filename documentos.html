@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="documentos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
         rel="stylesheet">
-    <title>usuario</title>
+    <title>Documentos</title>
 </head>
 <body>
     <div class="container">
@@ -47,13 +47,13 @@
                         </span>
                         <h3>Caja </h3>
                 </a>
-                <a href="usuario.html" class="active">
+                <a href="usuario.html">
                     <span class="material-icons-sharp">
                         person
                         </span>
                         <h3>Usuario</h3>
                 </a>
-                <a href="">
+                <a href="" class="active">
                     <span class="material-icons-sharp">
                         description
                         </span>
@@ -74,32 +74,45 @@
             </div>   
         </aside>
         <main>
-            <h1>General</h1>
+            <h1>Descarga tus documentos</h1>
             <div class="date">
                 <input type="date">
             </div>
 
             <div class="insights">
                 <div class="sales">
-                    <span class="material-icons-sharp">person</span> <br><br>
+                    
                     <div class="middle">
                         <div class="lef">
-                            <h1>Alex Adaro</h1>
-                            <h3>Perfil Admin.</h3> <br><br>
+                            <h1>Documentos</h1>
+                            <h3>Mes/Año</h3> <br><br>
                         </div>
                         
                     </div>
                     <div>
-                        <h2>Email: alexanderadaro@icloud.com</h2> <br>
-                        <h2>Phone Number: 345538487</h2> <br>
-                        <h2>Cuenta: Administrador</h2> <br> <br>
+                        <div>
+                        <label for="touch"><span id="pdf" class="material-icons-sharp"> description</span>
+                            <br>
+                        <h3>click the logo and select the month</h3></label>     <br><br>          
+                        <input type="checkbox" id="touch"> 
+                      
+                        <ul class="slideee">
+                          <li class="li2"><a class="a2" href="#">Noviembre</a></li> 
+                          <li class="li2"><a class="a2" href="#">Marzo</a></li>
+                          <li class="li2"><a class="a2" href="#">Abril</a></li>
+                          <li class="li2"><a class="a2" href="#">Mayo</a></li>
+                          <li class="li2"><a class="a2" href="#">Julio</a></li>
+                          <li class="li2"><a class="a2" href="#">Agosto</a></li>
+                          <li class="li2"><a class="a2" href="#">Diciembre</a></li>
+                        </ul>
+                    </div> <br><br><br>
                         <button> 
-                            PANEL
+                            Descargar PDF
                         </button>
                     </div>
                     <br><br><br>
-                    <small class="text-muted">Hey Alex, administra IDB desde aqui!</small>
-                </div>
+                    <small class="text-muted">Hey Alex, Descarga tu información!</small>
+                    </div>
                 
         </main>
         <div class="right">
@@ -219,8 +232,56 @@
 
         </div>
     </div> 
+
+    <div class="downbar">
+        <a href="index.html">
+            <span class="material-icons-sharp">
+                pie_chart
+                </span>
+                
+        </a>
+        <a href="/rendimiento.html">
+            <span class="material-icons-sharp">
+                auto_graph
+                </span>
+                
+        </a>
+        <a href="notificaciones.html">
+            <span class="material-icons-sharp">
+                notifications
+                </span>
+                
+                
+        </a>
+        <a href="caja.html">
+            <span class="material-icons-sharp">
+                account_balance
+                </span>
+                
+        </a>
+        <a href="usuario.html">
+            <span class="material-icons-sharp">
+                person
+                </span>
+                
+        </a>
+        <a href="" class="active">
+            <span class="material-icons-sharp">
+                description
+                </span>
+                
+        </a>
+        <a href="">
+            <span class="material-icons-sharp">
+                settings
+                </span>
+                
+        </a>
+        
+      </div>
     
 
     <script src="/index.js"></script>
+    
 </body>
 </html>

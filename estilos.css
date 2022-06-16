@@ -740,3 +740,111 @@ main .transacciones a{
         font-size: 2rem;
     }
 }
+
+
+@media screen and (min-width: 689px) {
+
+    .downbar{
+        display: none;
+    }
+  }
+
+
+  /* MOBILE MEDIA QUERIES  */
+
+@media screen and (max-width: 810px) {
+
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .insights{
+        display: flex;
+        
+        
+    }
+
+    .sales{
+        height: 72vh;
+        width: 95vw;
+        margin-left: 3vw;
+    }
+
+    
+    
+
+    aside{
+        display: none;
+    }
+
+.recent-updates{
+    display: none;
+}
+
+.sales-analytics{
+    display: none;
+}
+
+.right{
+    width: 94%;
+    margin: 0 auto 4rem;
+}
+
+.right .top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: var(--color-white);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+}
+
+.right .top .theme-toggler{
+    width: 4.4rem;
+    position: absolute;
+    left: 66%;
+}
+
+.right .profile .info{
+    display: none;
+}
+
+
+}
+
+.downbar {
+    overflow: hidden;
+    background-color: var(--color-background);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .downbar a {
+    float: left;
+    
+    display: block;
+    color: #6a6969;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .downbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .downbar a.active {
+    color: var(--color-primary);
+    
+  }
