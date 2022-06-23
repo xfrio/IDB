@@ -310,11 +310,13 @@ form{
     box-shadow: var(--box-shadow);
     transform:  all 300ms ease;
     
+    
 }
 
 .pd{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    
     color: #717171;
 }
 
@@ -323,8 +325,8 @@ form{
 
 .field{
     color: white;
-    background-color: #515ed465;
-    border-radius: 3px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
     height: 30px;
     margin-bottom: 10px;
     width: 100%;
@@ -336,7 +338,8 @@ form{
     padding: 10px 10px ;
     background-color: #20b986;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .btn-green:hover{
@@ -714,6 +717,166 @@ main .transacciones a{
     }
 
     aside{
+        display: none;
+    }
+
+    .material-icons-sharp{
+        display: none;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .close-btn{
+        display: none;
+    }
+
+    /* LISTA DE PDFS  */
+
+
+.a2 {text-decoration : none; color : #ffffff;
+    font-size: 13px;
+}
+
+.li2{
+    background-color: var(--color-primary);
+    border: 0.2px solid var(--color-background);
+    cursor: pointer;
+}
+
+.li2:hover {
+    
+    background-color: rgba(243, 116, 70, 0.319);
+}
+
+
+
+.a2:hover{
+    color: rgb(62, 61, 61);
+}
+
+.depositobuton{
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    
+}
+
+.depositobutonn{
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    
+    
+}
+
+.depositobuton:hover{
+    background-color: var(--color-danger);
+    color: #181a1e;
+}
+
+.insidebuttons{
+    background-color: var(--color-white);
+    color: var(--color-dark-variant);
+    font-size: 12px;
+}
+
+.insidebuttons::after {
+    color: var(--color-primary);
+}
+
+.slider2{
+    background-color: var(--color-white);
+    
+    gap: 0px 0px;
+    padding-top: 2px;
+    width: 50vw;
+}
+
+.tipodeposito:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+#pdf {
+    cursor: pointer;
+}
+
+#pdf:hover{
+    background-color:rgba(243, 116, 70, 0.319);
+}
+
+
+
+.slideee {
+  clear:both;
+  width:90vw;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .9s ease;
+  
+  border-radius: 17px;
+  
+}
+
+.divdeposito{
+    background-color: #20b98600;
+    width:50vw;
+}
+
+
+.divretiro{
+    background-color: #111f8800;
+    text-align: right; 
+    width: 46vw;
+}
+
+.sliderretiro {
+    background-color: var(--color-white);
+    clear:both;
+    width: 50vw;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .9s ease;
+    margin-right: 10px;
+    
+    
+    border-radius: 17px;
+    
+  }
+
+.slideee li {padding : 14px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slideee {height: 600px;} 
+
+
+#touchh {position: absolute; opacity: 0; height: 0px;}    
+
+#touchh:checked + .sliderretiro {height: 600px;} 
+
+
+    aside{
         position: fixed;
         left: -100%;
         background: #3548f5;
@@ -820,4 +983,159 @@ main .transacciones a{
     .right .top button span{
         font-size: 2rem;
     }
+
+    .downbar {
+        overflow: hidden;
+        background-color: var(--color-background);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .downbar a {
+        float: left;
+        
+        display: block;
+        color: #6a6969;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .downbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+      
+      .downbar a.active {
+        color: var(--color-primary);
+        
+      
+    }
+
+    .boxcompleto{
+        display: none;
+    }
+
+    .box2{
+        display: none;
+    }
+
+    .transacciones{
+        display: none;
+    }
+
+    .recent-updates{
+        display: none;
+    }
+
+    .sales-analytics{
+        display: none;
+    }
+
+    .box1{
+        display: none;
+    }
+
+
+
+   
+
+    main .boxcompleto > div{
+        display: none;
+    }
+    
+    .boxmobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "left right";
+       
+        height: 70vh;
+       
+    
+    }
+
+    aside .sidebar{
+        display: none;
+    }
+
+    .left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas: "top main";
+    }
+
+    .right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas: "topr mainr";
+        
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    /* From uiverse.io by @NorthFishHasNa */
+button {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: var(--color-primary);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+    
 }
+
+
+@media screen and (min-width: 769px) {
+    
+    .downbar{
+        display: none;
+    }
+
+    .boxmobile{
+        display: none;
+    }
+  }

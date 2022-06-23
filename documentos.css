@@ -631,13 +631,13 @@ button {
   height:0px;
   overflow: hidden;
   text-align: center;
-  transition: height .4s ease;
+  transition: height .9s ease;
   
   border-radius: 17px;
   
 }
 
-.slideee li {padding : 30px;}
+.slideee li {padding : 14px;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 

@@ -668,18 +668,10 @@ main .transacciones a{
     }
 
     aside{
-        position: fixed;
-        left: -100%;
-        background: #3548f5;
-        z-index: 3;
-        box-shadow: 1rem 3rem 4rem var(--color-light);
-        height: 100vh;
-        padding-right: var(--card-padding);
         display: none;
-        animation: showMenu 400ms ease forwards;
     }
 
-    @keyframes showMenu {
+    /* @keyframes showMenu {
         to{
             left: 0;
         }
@@ -713,7 +705,52 @@ main .transacciones a{
         cursor: pointer;
         margin-left: 15rem;
         
+    } */
+    .insights{
+        display: none;
     }
+
+    .rendimiento{
+        display: none;
+    }
+
+    .recent-updates{
+        display: none;
+    }
+
+    .sales-analytics{
+        display: none;
+    }
+
+    .notificacionesbox{
+        background-color: var(--color-white);
+        border: 1px solid rgba(128, 128, 128, 0.293);
+        border-radius: 20px;
+        height: 50vh;
+    }
+
+    .ultimas{
+        margin: 14px 14px;
+        
+        font-size: 15px;
+        
+    }
+
+    .notificacionesinsidebox{
+        
+        border: 1px solid grey; 
+        border-radius: 20px;
+        height: 40vh;
+        width: 90vw;
+        margin-left: 10px;
+        text-align: center;
+        
+    }
+
+    .textoinside{
+        margin-top: 10px;
+    }
+
 
     main{
         margin-top: 8rem;
@@ -721,6 +758,7 @@ main .transacciones a{
     }
 
     main .transacciones{
+        display: none;
         position: relative;
         margin: 3rem 0 0 0;
         width: 100%;
@@ -775,4 +813,45 @@ main .transacciones a{
         font-size: 2rem;
     }
 
-}}
+    .downbar {
+        overflow: hidden;
+        background-color: var(--color-background);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .downbar a {
+        float: left;
+        
+        display: block;
+        color: #6a6969;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .downbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+      
+      .downbar a.active {
+        color: var(--color-primary);
+        
+      
+    }
+    
+    
+}
+}
+
+@media screen and (min-width: 769px) {
+    
+    .downbar{
+        display: none;
+    }
+  }

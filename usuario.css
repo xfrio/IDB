@@ -656,6 +656,52 @@ button {
         
     }
 
+    .panel{
+        color: var(--color-primary);
+    }
+
+    .sliderretiro {
+        background-color: var(--color-primary-variant);
+        clear:both;
+        width: 85vw;
+        height:350px;
+        border: 1px solid var(--color-primary);
+        text-align: center;
+        transition: height .9s ease;
+        margin-right: 10px;
+        margin-top: 30px;
+        
+        border-radius: 17px;
+        
+      }
+
+      .pd{
+        margin-top: 25px;
+        font-size: 15px;
+      }
+
+      .field{
+        background-color: var(--color-primary);
+        text-align: center;
+        height: 30px;
+      }
+
+      .center-content{
+        background-color: var(--color-success);
+        color: black;
+        font-weight: 800;
+        border-radius: 20px;
+        margin-left: 32%;
+        width: 30vw;
+        text-align: center;
+      }
+
+      .apli{
+font-size: 30px;
+text-align: center;
+      }
+
+
     .sales{
         height: 72vh;
         width: 95vw;

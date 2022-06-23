@@ -630,70 +630,44 @@ main .transacciones a{
     }
 
     aside{
-        position: fixed;
-        left: -100%;
-        background: #3548f5;
-        z-index: 3;
-        box-shadow: 1rem 3rem 4rem var(--color-light);
-        height: 100vh;
-        padding-right: var(--card-padding);
         display: none;
-        animation: showMenu 400ms ease forwards;
     }
 
-    @keyframes showMenu {
-        to{
-            left: 0;
-        }
-    }
 
-    aside .logo{
-        margin-left: 1rem;
-    }
-
-    aside .logo h2{
-        display: inline;
-        color: white;
-    }
-    
-    aside .sidebar h3{
-        display: inline;
-    }
-
-    aside .sidebar a{
-        width: 100%;
-        height: 3.4rem;
-    }
-
-    aside .sidebar a:last-child{
-        position: absolute;
-        bottom: 5rem;
-    }
-
-    aside .close{
-        display: inline-block;
-        cursor: pointer;
-        margin-left: 15rem;
+    .insights{
+        display: none;
+        
         
     }
 
-    main{
-        margin-top: 8rem;
-        padding: 0 1rem;
+    .sales{
+        display: none;
     }
 
-    main .transacciones{
-        position: relative;
-        margin: 3rem 0 0 0;
-        width: 100%;
+    .rendimiento{
+        display: none;
 
     }
 
-    main .transacciones table{
-        width: 100%;
-        margin: 0;
+    .cash{
+        display: none;
+    }
+    
+    .transacciones{
+        display: none;
     }
 
+    aside{
+        display: none;
+    }
+
+.recent-updates{
+    display: none;
+}
+
+.sales-analytics{
+    display: none;
+}
     .right{
         width: 94%;
         margin: 0 auto 4rem;
@@ -736,4 +710,194 @@ main .transacciones a{
     .right .top button span{
         font-size: 2rem;
     }
+
+    .downbar {
+        overflow: hidden;
+        background-color: var(--color-background);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .downbar a {
+        float: left;
+        
+        display: block;
+        color: #6a6969;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .downbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+      
+      .downbar a.active {
+        color: var(--color-primary);
+        
+      
+    }
+
+    .rendimientobox {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "equidad equidad"
+          "RVC RFA"
+          "LISTA LISTA";
+
+      }
+
+      .textos{
+        display: table-cell;
+        margin: 0;
+        padding: 0 1rem;
+        vertical-align: middle;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        border: 1px solid rgba(177, 177, 177, 0.375);
+      }
+      
+      .azul{
+        color: var(--color-primary);
+      }
+
+      .equidad { 
+        display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nada texto porcentaje"; 
+  grid-area: equidad;
+  text-align: center;
+  background-color: var(--color-white);
+  border: 1px solid rgba(177, 177, 177, 0.375);
+  border-radius: 20px;
+  
+    
+    }
+
+    .texto{
+        grid-area: texto;
+        padding-top: 20%;
+    }
+
+    .redondel{
+        background-color: var(--color-primary);
+        border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        display: table;
+    }
+
+    .porcentaje{
+        grid-area: porcentaje;
+        padding-top: 34%;
+        
+
+    }
+      
+      .RVC {
+        grid-area: RVC;
+        background-color: rgba(255, 127, 80, 0);  
+        height: 15vh;  
+        text-align: center;
+        display: table;
+        padding-top: -20px;
+        grid-area: RVC; 
+    
+    }
+      
+      .RFA {
+        grid-area: RFA;
+        background-color: rgba(255, 127, 80, 0);  
+        height: 15vh;  
+        text-align: center;
+        display: table;
+        grid-area: RFA; 
+    padding: 1px;
+    }
+      
+      .LISTA { 
+        display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "uno dos"; 
+  grid-area: LISTA; 
+  background-color: var(--color-white);
+  border: 1px solid rgba(177, 177, 177, 0.375);
+  border-radius: 20px;
+
+         }
+      
+        .uno{
+            grid-area: uno;
+            margin-top: 10px;
+            margin-left: 10%;
+            font-size: large;
+        }
+
+        .dos{
+            grid-area: dos;
+            
+
+            margin-left: 70%;
+            margin-top: 10px;
+        }
+
+        .white{
+            color: white;
+            font-weight: 100;
+        }
+
+        .redondelverde{
+            background-color: rgb(8, 182, 54);
+            border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        display: table;
+
+        }
+
+        .redondelrojo{
+            background-color: var(--color-danger);
+            border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        display: table;
+        }
+
+        .redondelgris{
+            background-color: #6a6969;
+            border-radius: 20px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        display: table;
+        }
+    
 }
+
+@media screen and (min-width: 769px) {
+    
+    .downbar{
+        display: none;
+    }
+
+    .rendimientobox{
+        display: none;
+    }
+  } 
