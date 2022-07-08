@@ -670,7 +670,10 @@ main .transacciones a{
     aside{
         display: none;
     }
-
+    
+    #menu-btn{
+        display: none;
+    }
     /* @keyframes showMenu {
         to{
             left: 0;
@@ -852,6 +855,10 @@ main .transacciones a{
 @media screen and (min-width: 769px) {
     
     .downbar{
+        display: none;
+    }
+
+    .notificacionesbox{
         display: none;
     }
   }

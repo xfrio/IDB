@@ -240,7 +240,7 @@ aside .sidebar a:hover span{
 }
 
 aside .sidebar .message-count{
-    background: var(--color-danger);
+    background: yellowgreen;
     color: white;
     padding: 2px 10px;
     font-size: 11px;
@@ -248,53 +248,9 @@ aside .sidebar .message-count{
 }
 
 
-
 /* MAIN  */
 
-.panel{
-    color: var(--color-primary);
-}
-
-.sliderretiro {
-    background-color: var(--color-primary-variant);
-    clear:both;
-    width: 65vw;
-    height:350px;
-    border: 1px solid var(--color-primary);
-    text-align: center;
-    transition: height .9s ease;
-    margin-right: 10px;
-    margin-top: 30px;
-    
-    border-radius: 17px;
-    
-  }
-
-  .pd{
-    margin-top: 25px;
-    font-size: 15px;
-  }
-
-  .field{
-    background-color: white;
-    text-align: center;
-    height: 30px;
-  }
-
-  .center-content{
-    background-color: var(--color-success);
-    color: black;
-    font-weight: 800;
-    border-radius: 20px;
-    margin-left: 34.5%;
-    width: 20vw;
-    text-align: center;
-  }
-
-  .apli{
-font-size: 30px;
-text-align: center;
-  }
+/* MAIN  */
 
 
 main{
@@ -317,7 +273,7 @@ main .date input[type="date"] {
 
 main .insights{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 1.6rem;
 }
 
@@ -421,60 +377,42 @@ main .transacciones{
 
 }
 
-/* From uiverse.io by @kirzin */
-button {
-    text-decoration: none;
-    position: absolute;
+main .transacciones h2{
+    margin-bottom: 0.8rem;
+}
+
+
+main .transacciones table{
+    background-color: var(--color-white);
+
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: left;
+    box-shadow: var(--box-shadow);
+    transform:  all 300ms ease;
+}
+
+main .transacciones table:hover{
+    box-shadow:none
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td{
     border: none;
-    font-size: 14px;
-    font-family: inherit;
-    color: #fff;
-    width: 9em;
-    height: 3em;
-    line-height: 2em;
+}
+
+main .transacciones a{
     text-align: center;
-    background: linear-gradient(90deg,#03a9f4,#0a37dc,#ffffff,#03a9f4);
-    background-size: 200%;
-    border-radius: 30px;
-    z-index: 1;
-   }
-   
-   button:hover {
-    animation: ani 8s linear infinite;
-    border: none;
-   }
-   
-   @keyframes ani {
-    0% {
-     background-position: 0%;
-    }
-   
-    100% {
-     background-position: 400%;
-    }
-   }
-   
-   button:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: -1;
-    background: linear-gradient(90deg,#03a9f4,#0a37dc,#ffffff,#03a9f4);
-    background-size: 200%;
-    border-radius: 35px;
-    transition: 1s;
-   }
-   
-   button:hover::before {
-    filter: blur(10px);
-   }
-   
-   button:active {
-    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-   }
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
 
 /* TERCERA PARTE DE LA DERECHA  */
 
@@ -558,7 +496,6 @@ button {
     margin-bottom: 2rem;
 }
 
-
 /* SSSSSSSSSSSSS RETORNOS  */
 
 
@@ -634,7 +571,7 @@ button {
 @media screen and (max-width: 1200px) {
     .container{
         width: 84%;
-        grid-template-columns: 7rem auto 23rem;
+        grid-template-columns: 4rem auto 23rem;
         
     }
 
@@ -669,7 +606,7 @@ button {
     }
 
     main .transacciones table{
-        width: 73vw;
+        width: 45vw;
 
     }
 
@@ -682,8 +619,46 @@ button {
         display: none;
 
     }
+
+    main .transacciones table{
+        background-color: var(--color-white);
+    
+        width: 50%;
+        border-radius: var(--card-border-radius);
+        padding: var(--card-padding);
+        text-align: left;
+        box-shadow: var(--box-shadow);
+        transform:  all 300ms ease;
+        font-size: 13px;
+    }
+    
+    main .transacciones table:hover{
+        box-shadow:none
+    }
+    
+    main table tbody td{
+        height: 2.8rem;
+        border-bottom: 1px solid var(--color-light);
+        color: var(--color-dark-variant);
+    }
+    
+    main table tbody tr:last-child td{
+        border: none;
+    }
+    
+    main .transacciones a{
+        font-size: 10px;
+        text-align: left;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary);
+
+    
     
 }
+
+
+  
 
 
 /* MOBILE MEDIA QUERIES  */
@@ -695,148 +670,293 @@ button {
         grid-template-columns: 1fr;
     }
 
-    .insights{
-        display: flex;
-        
-        
-    }
-
-    .panel{
-        color: var(--color-primary);
-    }
-
-    .sliderretiro {
-        background-color: var(--color-primary-variant);
-        clear:both;
-        width: 85vw;
-        height:350px;
-        border: 1px solid var(--color-primary);
-        text-align: center;
-        transition: height .9s ease;
-        margin-right: 10px;
-        margin-top: 30px;
-        
-        border-radius: 17px;
-        
-      }
-
-      .pd{
-        margin-top: 25px;
-        font-size: 15px;
-      }
-
-      .field{
-        background-color: var(--color-primary);
-        text-align: center;
-        height: 30px;
-      }
-
-      .center-content{
-        background-color: var(--color-success);
-        color: black;
-        font-weight: 800;
-        border-radius: 20px;
-        margin-left: 32%;
-        width: 30vw;
-        text-align: center;
-      }
-
-      .apli{
-font-size: 30px;
-text-align: center;
-      }
-
-
-    .sales{
-        height: 72vh;
-        width: 95vw;
-        margin-left: 3vw;
-    }
-
-    
-    
-
     aside{
         display: none;
     }
-
-.recent-updates{
-    display: none;
-}
-
-.sales-analytics{
-    display: none;
-}
-
-.right{
-    width: 94%;
-    margin: 0 auto 4rem;
-}
-
-.right .top{
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    padding: 0 0.8rem;
-    height: 4.6rem;
-    background: var(--color-white);
-    width: 100%;
-    margin: 0;
-    z-index: 2;
-    box-shadow: 0 1rem 1rem var(--color-light);
-}
-
-.right .top .theme-toggler{
-    width: 4.4rem;
-    position: absolute;
-    left: 66%;
-}
-
-.right .profile .info{
-    display: none;
-}
-
-
-}
-
-.downbar {
-    overflow: hidden;
-    background-color: var(--color-background);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .downbar a {
-    float: left;
     
-    display: block;
-    color: #6a6969;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .downbar a:hover {
-    background: #f1f1f1;
-    color: black;
-  }
-  
-  .downbar a.active {
-    color: var(--color-primary);
+    #menu-btn{
+        display: none;
+    }
+    /* @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo{
+        margin-left: 1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+        color: white;
+    }
     
-  }
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 15rem;
+        
+    } */
+    .insights{
+        display: none;
+    }
+
+    .rendimiento{
+        display: none;
+    }
+
+    .recent-updates{
+        display: none;
+    }
+
+    .sales-analytics{
+        display: none;
+    }
+
+    .notificacionesbox{
+        background-color: var(--color-white);
+        border: 1px solid rgba(128, 128, 128, 0.293);
+        border-radius: 20px;
+        height: 50vh;
+    }
+
+    .ultimas{
+        margin: 14px 14px;
+        
+        font-size: 15px;
+        
+    }
+
+    .notificacionesinsidebox{
+        
+        border: 1px solid grey; 
+        border-radius: 20px;
+        height: 40vh;
+        width: 90vw;
+        margin-left: 10px;
+        text-align: center;
+        
+    }
+
+    .textoinside{
+        margin-top: 10px;
+    }
 
 
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    main .transacciones{
+        display: none;
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+
+    }
+
+    main .transacciones table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .profile .info{
+        display: none;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-danger);
+        position: absolute;
+        left: 1rem;
+        
+    }
+
+    .right .top button span{
+        font-size: 2rem;
+    }
+
+    .downbar {
+        overflow: hidden;
+        background-color: var(--color-background);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .downbar a {
+        float: left;
+        
+        display: block;
+        color: #6a6969;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .downbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+      
+      .downbar a.active {
+        color: var(--color-primary);
+        
+      
+    }
+
+    .btncont{
+        background-color: var(--color-primary);
+        height: 33px;
+        width: 120px;
+        border-radius: 7px;
+        margin-left: 2%;
+       margin-top: 2%;
+       color: white;
+    }
+
+    .divinside{
+        border: 1px solid rgba(128, 128, 128, 0.218);
+        height: 38vh;
+        width: 90vw;
+        margin-left: 0px;
+        border-radius: 10px;
+        margin-top: 20px;
+        
+            display: grid; 
+            grid-template-columns: 0.3fr 1.7fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+        "left center right"; 
+        }
+        .left { grid-area: left; }
+        .center { grid-area: center; }
+        .right { grid-area: right; }
+    }
+
+    .imgimg{
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    .btncont2{
+        background-color: var(--color-primary);
+        height: 30px;
+        width: 80px;
+        border-radius: 6px;
+        margin-top: 10px;
+        color: white;
+    }
+    
+}
 
 
-  @media screen and (min-width: 769px) {
-
+@media screen and (min-width: 769px) {
+    
     .downbar{
         display: none;
     }
-  }
+
+    .btncont{
+        background-color: var(--color-primary);
+        height: 33px;
+        width: 120px;
+        border-radius: 7px;
+        margin-left: 2%;
+       margin-top: 2%;
+       color: white;
+    }
+
+    .divinside{
+        border: 1px solid rgba(128, 128, 128, 0.218);
+        height: 38vh;
+        width: 40vw;
+        margin-left: 0px;
+        border-radius: 10px;
+        margin-top: 20px;
+        
+            display: grid; 
+            grid-template-columns: 0.5fr 1.5fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+        "left center right"; 
+        }
+        .left { grid-area: left; }
+        .center { grid-area: center; }
+        .right { grid-area: right; }
+    
+
+    .imgimg{
+        height: 60px;
+        width: 60px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    .btncont2{
+        background-color: var(--color-primary);
+        height: 30px;
+        width: 110px;
+        border-radius: 6px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .ultimas{
+        margin: 14px 14px;
+        
+        font-size: 25px;
+        
+    }
+
+}

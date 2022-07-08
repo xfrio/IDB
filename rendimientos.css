@@ -640,6 +640,10 @@ main .transacciones a{
         
     }
 
+    #menu-btn{
+        display: none;
+    }
+
     .sales{
         display: none;
     }
