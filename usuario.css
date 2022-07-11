@@ -259,7 +259,7 @@ aside .sidebar .message-count{
     background-color: var(--color-primary-variant);
     clear:both;
     width: 65vw;
-    height:350px;
+    height:40vh;
     border: 1px solid var(--color-primary);
     text-align: center;
     transition: height .9s ease;
@@ -267,7 +267,38 @@ aside .sidebar .message-count{
     margin-top: 30px;
     
     border-radius: 17px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "left rightdos";
+  }
+
+  .left{
+    grid-area: left;
+  }
+
+  .right2{
+    grid-area: rightdos;
+  }
+
+  .h2box{
+    color: white;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+
+  .h2box2{
+    color: white;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+
+  .btn-green{
+    background-color: #03a9f4;
+    height: 30px;
+    width: 100px;
+    margin-left: -50px;
   }
 
   .pd{
@@ -328,6 +359,7 @@ main .insights > div{
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    height: 80vh;
 }
 
 main .insights > div:hover{
@@ -479,7 +511,8 @@ button {
 /* TERCERA PARTE DE LA DERECHA  */
 
 .right{
-    margin-top: 1.4rem;
+    margin-top: 10px;
+    margin-left: -50px;
 }
 
 .right .top{
@@ -708,8 +741,8 @@ button {
     .sliderretiro {
         background-color: var(--color-primary-variant);
         clear:both;
-        width: 85vw;
-        height:350px;
+        width: 87vw;
+        height:40vh;
         border: 1px solid var(--color-primary);
         text-align: center;
         transition: height .9s ease;
@@ -717,7 +750,11 @@ button {
         margin-top: 30px;
         
         border-radius: 17px;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "left rightdos";
       }
 
       .pd{
@@ -741,18 +778,23 @@ button {
         text-align: center;
       }
 
+      .h2box{
+        margin-top: 10px;
+      }
+
+      .h2box2{
+        margin-top: 10px;
+      }
+
       .apli{
 font-size: 30px;
 text-align: center;
       }
 
 
-    .sales{
-        height: 72vh;
-        width: 95vw;
-        margin-left: 3vw;
-    }
-
+  .right{
+    margin-top: -170%;
+  }
     
     
 
@@ -768,37 +810,7 @@ text-align: center;
     display: none;
 }
 
-.right{
-    width: 94%;
-    margin: 0 auto 4rem;
-}
 
-.right .top{
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    padding: 0 0.8rem;
-    height: 4.6rem;
-    background: var(--color-white);
-    width: 100%;
-    margin: 0;
-    z-index: 2;
-    box-shadow: 0 1rem 1rem var(--color-light);
-}
-
-.right .top .theme-toggler{
-    width: 4.4rem;
-    position: absolute;
-    left: 66%;
-}
-
-.right .profile .info{
-    display: none;
-}
-
-
-}
 
 .downbar {
     overflow: hidden;
@@ -831,12 +843,22 @@ text-align: center;
     
   }
 
+}
 
 
 
   @media screen and (min-width: 769px) {
 
     .downbar{
+        display: none;
+    }
+
+    
+    .recent-updates{
+        display: none;
+    }
+
+    .sales-analytics{
         display: none;
     }
   }

@@ -929,11 +929,11 @@ main .transacciones a{
             grid-template-rows: 1fr; 
             gap: 0px 0px; 
             grid-template-areas: 
-        "left center right"; 
+        "left center rightdos"; 
         }
         .left { grid-area: left; }
         .center { grid-area: center; }
-        .right { grid-area: right; }
+        .rightdos { grid-area: rightdos; }
     
 
     .imgimg{
